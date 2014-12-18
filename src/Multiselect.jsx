@@ -200,7 +200,7 @@ var Select = React.createClass({
 
   _click: function(e){
     this._focus(true)
-    !this.props.open && this.open()
+    this.props.openOnClick && !this.props.open && this.open()
   },
 
   _focus: function(focused, e){
