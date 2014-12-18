@@ -155,7 +155,7 @@ var Select = React.createClass({
             placeholder={this._placeholder()}
             onChange={this._typing}/>
         </div>
-        <Popup open={this.props.open} onRequestClose={this.close} duration={this.props.duration}>
+        <Popup open={this.props.open && items.length > 0} onRequestClose={this.close} duration={this.props.duration}>
           <div>
             <List ref="list"
               id={listID}
